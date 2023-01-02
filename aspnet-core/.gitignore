@@ -250,3 +250,7 @@ paket-files/
 # JetBrains Rider
 .idea/
 *.sln.iml
+
+src/Senior.Boilerplate.Web.Mvc/secrets.json
+src/Senior.Boilerplate.Web.Host/secrets.json
+src/Senior.Boilerplate.Migrator/secrets.json

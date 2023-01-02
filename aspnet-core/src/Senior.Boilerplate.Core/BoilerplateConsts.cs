@@ -15,6 +15,6 @@ namespace Senior.Boilerplate
         /// Default pass phrase for SimpleStringCipher decrypt/encrypt operations
         /// </summary>
         public static readonly string DefaultPassPhrase =
-            DebugHelper.IsDebug ? "gsKxGZ012HLL3MI5" : "bab42a885f924a9381ac4251242f240e";
+            DebugHelper.IsDebug ? "gsKxGZ012HLL3MI5" : "4f95f00c358348068c712173b5a64635";
     }
 }

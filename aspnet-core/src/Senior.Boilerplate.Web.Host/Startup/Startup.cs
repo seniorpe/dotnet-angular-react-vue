@@ -38,7 +38,7 @@ namespace Senior.Boilerplate.Web.Host.Startup
             _appConfiguration = env.GetAppConfiguration();
         }
 
-        public IServiceProvider ConfigureServices(IServiceCollection services)
+        public void ConfigureServices(IServiceCollection services)
         {
             //MVC
             services.AddControllersWithViews(
@@ -78,7 +78,7 @@ namespace Senior.Boilerplate.Web.Host.Startup
             ConfigureSwagger(services);
 
             // Configure Abp and Dependency Injection
-            return services.AddAbp<BoilerplateWebHostModule>(
+            services.AddAbpWithoutCreatingServiceProvider<BoilerplateWebHostModule>(
                 // Configure Log4Net logging
                 options => options.IocManager.IocContainer.AddFacility<LoggingFacility>(
                     f => f.UseAbpLog4Net().WithConfig(_hostingEnvironment.IsDevelopment()
@@ -89,7 +89,7 @@ namespace Senior.Boilerplate.Web.Host.Startup
             );
         }
 
-        public void Configure(IApplicationBuilder app, ILoggerFactory loggerFactory)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory)
         {
             app.UseAbp(options => { options.UseAbpRequestLocalization = false; }); // Initializes ABP framework.
 
@@ -100,10 +100,10 @@ namespace Senior.Boilerplate.Web.Host.Startup
             app.UseRouting();
 
             app.UseAuthentication();
+            app.UseAuthorization();
 
             app.UseAbpRequestLocalization();
-
-
+            
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapHub<AbpCommonHub>("/signalr");

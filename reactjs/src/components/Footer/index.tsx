@@ -5,7 +5,7 @@ const Footer = () => {
   
   return (
     <Layout.Footer className={'footer'} style={{ textAlign: 'center' }}>
-      React © 2021 <a href="https://github.com/seniorpe/dotnet-angular-react-vue">Github Page</a>
+      Asp.Net Boilerplate - React © 2018 <a href="https://github.com/ryoldash/module-zero-core-template">Github Page</a>
     </Layout.Footer>
   );
 };

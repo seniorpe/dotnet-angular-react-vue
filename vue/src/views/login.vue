@@ -4,11 +4,8 @@
       <div class="top">
         <div class="header">
           <a>
-            <img src="../images/vue.png"
-                      alt="Vue.js"
-                      class="brand-image img-circle elevation-3 logo"
-                      style="opacity: 0.8;"/>
-            <span class="title">{{L('Vue.js')}}</span>
+            <img class="logo"/>
+            <span class="title">{{L('AppName')}}</span>
           </a>
         </div>
         <div class="desc">

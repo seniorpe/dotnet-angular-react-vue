@@ -1,8 +1,5 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "cli": {
-    "analytics": false
-  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -124,6 +121,7 @@
             "main": "src/test.ts",
             "karmaConfig": "./karma.conf.js",
             "polyfills": "src/polyfills.ts",
+            "tsConfig": "src/tsconfig.spec.json",
             "assets": [
               "src/assets",
               "src/favicon.ico",
@@ -158,15 +156,6 @@
               "node_modules/abp-web-resources/Abp/Framework/scripts/libs/abp.moment.js"
             ]
           }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "src/tsconfig.json"
-            ],
-            "exclude": []
-          }
         }
       }
     },
@@ -181,20 +170,10 @@
             "protractorConfig": "./protractor.conf.js",
             "devServerTarget": "Boilerplate:serve"
           }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "e2e/tsconfig.json"
-            ],
-            "exclude": []
-          }
         }
       }
     }
   },
-  "defaultProject": "Boilerplate",
   "schematics": {
     "@schematics/angular:component": {
       "prefix": "app",

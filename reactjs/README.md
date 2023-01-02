@@ -1,8 +1,8 @@
-# ReactJS
+# ASP.NET Boilerplate ReactJS Template
 
 The React.js integration for ABP Boilerplate framework. This template is built on React+Mobx+Typescript. SOLID, SoC principles are used.
 
-![](_screenshots/roles.png)
+![](_screenshots/dashboard.png)
 
 ## Getting Started
 
@@ -44,3 +44,10 @@ This framework is designed by utilizing MVC design pattern and layered architect
 - Presentational Component can use store directly by injecting the store or Props from Container Component can be passed in it.
 - Container or Presentational Component can invoke store actions and automatic rendering of component will be done by Mobx.
 
+![](_screenshots/architecture.jpg)
+
+## Authors of ASP.NET Boilerplate ReactJS Template
+
+* **Rashiduddin Yoldash** - *Initial work* - [ryoldash](https://github.com/ryoldash)
+* **Mehmet Yasir Aktunç** - *Initial work* - [mhmtyasr](https://github.com/mhmtyasr)
+* **Samet Kabay** - *Initial work* - [smtkby](https://github.com/smtkby)

@@ -4,7 +4,7 @@ const AppConsts= {
         defaultAdminUserName: 'admin'
     },
     localization:{
-        defaultLocalizationSourceName: 'Vue'
+        defaultLocalizationSourceName: 'Boilerplate'
     },
     authorization:{
         encrptedAuthTokenName: 'enc_auth_token'

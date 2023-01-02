@@ -14,13 +14,7 @@
                 <div slot="top" class="logo-con">
                   <a>
                     <Icon type="cube" size="32"></Icon>
-                    <img
-                      src="../images/vue.png"
-                      alt="Vue.js"
-                      class="brand-image img-circle elevation-3"
-                      style="opacity: 0.8;"
-                    />
-                    <h1 >{{L('Vue.js')}}</h1>
+                    <h1 >{{L('AppName')}}</h1>
                   </a>
                    
                 </div>
